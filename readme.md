@@ -130,7 +130,7 @@ Here is the conversation:
   }
 ```
 Response:
-```markdown
+```text
 <<start analyze>>The user asked for a non-sensical Portuguese version of the chorus that keeps the same rhythm and syllable structure, and I provided a version that still made sense. The user then specified that they wanted to change the meaning of the lines to make less sense, only keeping the word "Sonambulismo" and the same syllable count.<<end analyze>>
 
 <<start request>>Can you make a non-sensical portuguese version of the chorus that keeps the same rhythm and syllable structure?<<end request>>
