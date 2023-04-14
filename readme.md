@@ -44,7 +44,7 @@ In summary, our method introduces a new and innovative approach for generating m
 you can directly copy the text and paste it into GPT-4 webchat
 
 input:
-```markdown
+```text
 Please response following these rules:
 1. The selected request is bounded with !!!request!!!. Copy the selected request unchanged, start with <<start request>>, end with <<end request>>.
 2. You should analyze the intuition(why) of the response based on the given past conversation (consider the previous and following conversation), start with <<start analyze>>,end with <<end analyze>>.
