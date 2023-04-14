@@ -281,11 +281,13 @@ example:
 </details>
 
 ## Response Examples
-Due to budget issue, these examples are generated with gpt-3.5-turbo. But with our method, its response is still better than original.(but have much more mistakes than GPT-4)
 <details>
   <summary>Click to expand</summary>
 
 ```markdown
+<<start request>>Who sings the Italo Disco song "Sonnambulismo"?<<end request>>
+<<start analyze>>The user previously asked for information about the Italo Disco song "Sonnambulismo" which the AI mistakenly attributed to Pino D'Angiò. After a back and forth involving lyrics, the user shared the correct chorus lyrics, which the AI recognized came from a song by Gazebo.<<end analyze>>
+<<new reply>>The Italo Disco song "Sonnambulismo" you're referring to is performed by Gazebo, an Italian singer and songwriter. I apologize for the confusion in my previous responses.<<end reply>>
 
 
 ```
