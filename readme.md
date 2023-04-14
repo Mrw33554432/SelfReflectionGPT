@@ -270,3 +270,8 @@ example:
 ```
 </details>
 
+## WIPs
+1. Generate a dataset
+2. Validate the quality of response in statistical data (even though it's obviously better)
+3. Using data this method on fine-tuning an open-source LLM
+4. Publish the LLM for public access, and use the public chat data for further improvement
