@@ -192,8 +192,7 @@ print(formatted_history)
 chatbot.ask_with_command(formatted_history)
 ```
 Response:
-```python
-"""
+```text
 <<start request>>Can you make a non-sensical portuguese version of the chorus that keeps the same rhythm and syllable structure?<<end request>> <<start analyze>>The user is requesting a non-sensical version of the chorus in Portuguese that maintains the same rhythm and syllable structure. Previous replies provided by the AI were still somewhat coherent in terms of meaning.<<end analyze>> <<new reply>>Considerando o pedido, aqui está uma versão do refrão em português sem sentido lógico, mantendo a palavra "Sonambulismo" e a mesma quantidade de sílabas:
 
 Sonambulismo, laranja azul
@@ -205,7 +204,6 @@ Dança ilhabela, borboleta cão
 Amendoim, risonho, abacate triste
 Sem caranguejo, caminho croissant
 <<end reply>>
-"""
 ```
 </details>
 
