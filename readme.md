@@ -10,6 +10,9 @@ Large language models, like GPT, have transformed natural language processing by
 
 
 2. The methodology proposed in this essay for generating training data from chat interactions and enabling self-evolution of large language models has the potential to push these models even further. It is worth noting that OpenAI does not store conversation history data on their end. As a result, it is reasonable to assume that they did not use a method similar to the one proposed here in their model training. This suggests that our approach could indeed offer a novel and promising direction for enhancing the capabilities of large language models.
+
+
+3. It can be used for improve the data quality for all kinds of data, including human-human/human-AI/AI-human/AI-AI conversations.
 ## Methodology
 
 Our approach harnesses the power of interactive chat to create high-quality training data. By enabling users to converse with a language model, we can gather a substantial amount of diverse, context-rich data that can be employed for fine-tuning the model.
