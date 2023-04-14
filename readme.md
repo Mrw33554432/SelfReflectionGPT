@@ -281,7 +281,7 @@ example:
 </details>
 
 ## Response Examples
-Due to budget issue, these examples are generated with gpt-3.5-turbo. But with our method, its response is still decent. (but it doesn't always follow instructions)
+Due to budget issue, these examples are generated with gpt-3.5-turbo. But with our method, its response is still better than original.(but have much more mistakes than GPT-4)
 <details>
   <summary>Click to expand</summary>
 
