@@ -4,6 +4,10 @@
 
 Large language models, like GPT, have transformed natural language processing by achieving unparalleled results in a variety of NLP tasks. However, they still need an extensive amount of high-quality training data for optimal performance. In this project, we propose an innovative method for generating meaningful training data from chat interactions, enabling large language models to become self-evolving.
 
+### core advantage
+With this approach, we can generate a dataset of high quality conversation/response dataset not just better than native GPT-4, but also better than human level in many cases (because the model already know what is going to happen in the future when making response - we give it to the model).
+
+
 ## Methodology
 
 Our approach harnesses the power of interactive chat to create high-quality training data. By enabling users to converse with a language model, we can gather a substantial amount of diverse, context-rich data that can be employed for fine-tuning the model.
@@ -28,6 +32,7 @@ Moreover, our self-evolving approach allows the model to continuously improve as
 ## Conclusion
 
 In summary, our method introduces a new and innovative approach for generating meaningful training data for large language models and making them self-evolving. By capitalizing on the power of interactive chat, we can generate high-quality training data and consistently improve the performance of these models. This has the potential to significantly advance the field of NLP and bring us closer to achieving human-like language understanding in AI.
+
 
 ## Example
 ### Direct input
