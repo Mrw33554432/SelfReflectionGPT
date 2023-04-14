@@ -5,7 +5,7 @@
 Large language models, like GPT, have transformed natural language processing by achieving unparalleled results in a variety of NLP tasks. However, they still need an extensive amount of high-quality training data for optimal performance. In this project, we propose an innovative method for generating meaningful training data from chat interactions, enabling large language models to become self-evolving.
 
 ### core advantage
-With this approach, we can generate a dataset of high quality conversation/response dataset not just better than native GPT-4, but also better than human level in many cases (because the model already know what is going to happen in the future when making response - we give it to the model).
+With this approach, we can generate a dataset of high quality conversation/response not just better than native GPT-4, but also better than human level in many cases (because the model already know what is going to happen in the future when making response - we give it to the model).
 
 
 ## Methodology
