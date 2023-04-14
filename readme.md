@@ -274,7 +274,9 @@ example:
         "Can you make a non-sensical portuguese version of the chorus that keeps the same rhythm and syllable structure?",
     "output":
         """
-        Understood. Here's a non-sensical Portuguese version of the chorus with the same syllable count and keeping the word "Sonambulismo":\n\nSonambulismo abacaxi\nMangueira vai desabar\nQuantas frutas essa noite girafa\nVai me fazer engolir\nSonambulismo liquidificador\nDe dançar sem um chapéu\nSereno, alegre, melancólico\nCaminho sem anzol"""}
+        Understood. Here's a non-sensical Portuguese version of the chorus with the same syllable count and keeping the word "Sonambulismo":\n\nSonambulismo abacaxi\nMangueira vai desabar\nQuantas frutas essa noite girafa\nVai me fazer engolir\nSonambulismo liquidificador\nDe dançar sem um chapéu\nSereno, alegre, melancólico\nCaminho sem anzol
+        """
+}
 ```
 </details>
 
