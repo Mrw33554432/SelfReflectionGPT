@@ -16,10 +16,6 @@ However, using chat data without further modification is not an ideal approach. 
 
 This approach not only generates training data, but it also allows the model to continuously evolve and improve through interactions with more users.
 
-<details>
-  <summary>Click to expand</summary>
-  Your content goes here
-</details>
 
 
 
