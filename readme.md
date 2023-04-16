@@ -1,6 +1,6 @@
 # Generating High Quality Training Data from Multi-Round Chat for Self-Improving Large Language Models
 
-![WorkFlow graph](graph_0.png)
+![WorkFlow graph](img/graph_0.png)
 ## Introduction
 
 Large language models, like GPT, have transformed natural language processing by achieving unparalleled results in a variety of NLP tasks. However, they still need an extensive amount of high-quality training data for optimal performance. In this project, we propose an innovative method for generating meaningful training data from chat interactions, enabling large language models to become self-evolving.
