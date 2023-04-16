@@ -37,7 +37,7 @@ In summary, our method introduces a new and innovative approach for generating m
 
 
 ## Example
-### Direct input
+### ChatGPT Webchat Input
 <details>
   <summary>Click to expand</summary>
   
