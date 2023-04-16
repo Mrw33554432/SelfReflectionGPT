@@ -193,11 +193,9 @@ NEW:I'm sorry, a 3-sided coin doesn't exist in the real world, so I cannot simul
 
 Q:the current color hexes contrast fine for dark background. I need alternative hexes of the same colors for white background.
 OLD:Sure, here are alternative hex codes for the same colors that have a high enough contrast for use on a white background:
-
-* Primary Color: #2F6D92 (blue)
-* Secondary Color: #6FAC7E (green)
-* Accent Color: #FF9AA2 (pink)
-
+    * Primary Color: #2F6D92 (blue)
+    * Secondary Color: #6FAC7E (green)
+    * Accent Color: #FF9AA2 (pink)
 These hex codes have been adjusted to provide a higher contrast ratio when used on a white background, while still retaining the same general hue and saturation as the original colors. Please note that the exact contrast ratio may vary depending on the specific design and context in which the colors are used.
 NEW:Here are alternative hex codes for the same colors with higher contrast ratios against a white background while maintaining the original hues: Primary Color: #2F6D92 (blue); Secondary Color: #3A793A (green); Accent Color: #CC415A (pink). These colors now have better contrast ratios and should be more suitable for use on a white background.
 
