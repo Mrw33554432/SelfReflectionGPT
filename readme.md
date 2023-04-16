@@ -1,4 +1,4 @@
-# Generating Meaningful Training Data from Chat for Self-Evolving Large Language Models
+# Generating High Quality Training Data from Multi-Round Chat for Self-Improving Large Language Models
 
 ![WorkFlow graph](graph_0.png)
 ## Introduction
