@@ -21,11 +21,11 @@ import json
 
 
 class CommandGenerator:
-    def __init__(self, marked_history):
+    def __init__(self, marked_history,question):
         self.marked_history = marked_history
-        self.response_format = {"Criticism": "Criticism on L according to consequent chats",
-                                "K": "K, unchanged",
-                                "L": "The new answer to K regarding the criticism"}
+        self.response_format = {"K": f"{question}",
+                                "C": "Criticism on L according to consequent chats",
+                                "L": "A response str answers K."}
         self.response_format_35 = {"Q": "Flip a 3-sided coin",
                                    "A": "I'm sorry, I am not able to physically flip a coin. However, I can simulate the outcome of a 3-sided coin flip for you. The possible outcomes are heads, tails and side.",
                                    "Criticism": "[implement]Criticism on original answer (A)",
@@ -41,9 +41,12 @@ class CommandGenerator:
                     "parsed by Python json.loads")
         else:
             formatted_response_format = json.dumps(self.response_format, indent=4)
-            return ("You should only respond in JSON format as described below \nResponse"
-                    f" Format: \n{formatted_response_format} \nEnsure the response can be"
-                    "parsed by Python json.loads")
+            return (
+                "You should leave K unchanged and implement C and L.\n"
+                "Pretend you are having a new chat and answering K.\n"
+                "You should only respond in JSON format as described below \n"
+                f"Response Format: \n{formatted_response_format} \nEnsure the response can be"
+                "parsed by Python json.loads")
 
     def generate_input(self):
         return f"Conversation:\n{self.marked_history}"

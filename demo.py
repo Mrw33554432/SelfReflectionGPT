@@ -11,6 +11,7 @@ with open('sharegpt_20230401_clean_lang_split.json', encoding='utf-8') as file:
     data = json.load(file)
 
 formatted_history = ""
+question=""
 for conversation in data:
     if conversation["id"] == "skuuYph_0":
         base_index = 0
@@ -21,22 +22,23 @@ for conversation in data:
             base_index += 1
         for index, chat_detail in enumerate(history):
             if chat_detail["from"] == "human":
-                role="Q"
+                role = "Q"
             else:
-                role="A"
-            string_representation = role + ":" + str(chat_detail["value"])+"\n"
+                role = "A"
+            string_representation = role + ":\n" + "[[[\n" + str(chat_detail["value"]) + "\n" + "]]]\n"
             if index == random_integer:
-                print("start")
-                formatted_history+="K"+string_representation[1:]
+                formatted_history += "K" + string_representation[1:]
+                raw=chat_detail["value"]
+                question=f"'{raw}'"
             elif index == random_integer + 1:
-                print("end")
-                formatted_history+="L"+string_representation[1:]
+                formatted_history += "L" + string_representation[1:]
             else:
-                formatted_history+=string_representation
+                formatted_history += string_representation
 
-print(formatted_history)
-generator=CommandGenerator(formatted_history)
-command=generator.generate_command()
-input=generator.generate_input()
+generator = CommandGenerator(formatted_history,question)
+command = generator.generate_command()
+input = generator.generate_input()
+print(input)
 print(command)
+print(question)
 chatbot.ask(command,input)

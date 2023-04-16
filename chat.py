@@ -8,11 +8,12 @@ class ChatGPT():
 
     def ask(self, system,user,model=4):
         model_name="gpt-3.5-turbo" if model==3.5 else "gpt-4"
+        full_promopt=self.command(system,user)
         completion = openai.ChatCompletion.create(model=model_name,
-                                        messages=self.command(system,user))
+                                        messages=full_promopt)
         response = completion.choices[0].message["content"]
         print(response)
         return response
 
     def command(self, system, user):
-        return [{"role": "system", "content": system},{"role": "user", "content": user}]
+        return [{"role": "user", "content": user},{"role": "system", "content": system}]
