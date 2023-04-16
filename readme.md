@@ -45,106 +45,40 @@ you can directly copy the text and paste it into GPT-4 webchat
 
 input:
 ```text
-Please response following these rules:
-1. The selected request is bounded with !!!request!!!. Copy the selected request unchanged, start with <<start request>>, end with <<end request>>.
-2. You should analyze the intuition(why) of the response based on the given past conversation (consider the previous and following conversation), start with <<start analyze>>,end with <<end analyze>>.
-3. The selected response is bounded with ***response***. Write a better response with the given context. The new reply should be provided to replace the string bounded with ***response***. New response should start with <<new reply>> end with <<end reply>>.
-4. You should consider chats after the selected message as a feedback.
-Here is the conversation:
+K:Flip a 3-sided coin
+L:I'm sorry, I am not able to physically flip a coin. However, I can simulate the outcome of a 3-sided coin flip for you. The possible outcomes are heads, tails and side.
+Q:flip it for me
+A:The outcome of the 3-sided coin flip is:
+heads
+Q:again
+A:The outcome of the 3-sided coin flip is:
+tails
+Q:again
+A:The outcome of the 3-sided coin flip is:
+side
+Q:How can a 3 sided coin exist
+A:A three-sided coin can exist physically, but it would not function like a traditional coin with two sides. It would be a triangular prism with three flat faces. Each face would have a different design or inscription, and when the coin is flipped, one of the three faces would land facing up.
+It's a hypothetical object, not a real coin and it's not used for any practical purposes.
+Q:so how did you flip one
+A:As a language model, I don't have the ability to physically flip a coin. I used a random number generator and a pre-defined set of outcomes to simulate a 3-sided coin flip, and returned one of the predefined outcomes as the result of the flip.
+It is important to note that this is not a real coin flip, it's just a way of simulate one.
+
+You should only respond in JSON format as described below 
+Response Format: 
 {
-    "id": "OHGMj1T_0",
-    "conversations": [
-      {
-        "from": "human",
-        "value": "Who sings the italo disco song \"sonambulismo\"?"
-      },
-      {
-        "from": "gpt",
-        "value": "The Italo Disco song \"Sonambulismo\" is performed by the Italian musician and singer Pino D'Angi\u00f2. The song was released in 1984 and became a hit in Italy and other European countries."
-      },
-      {
-        "from": "human",
-        "value": "give me the lyrics"
-      },
-      {
-        "from": "gpt",
-        "value": "Certainly, here are the lyrics to \"Sonambulismo\" by Pino D'Angi\u00f2:\n\nVerse 1:\nC'\u00e8 un'ombra nella notte\nChe mi segue sempre pi\u00f9\n\u00c8 una voce che mi chiama\nChe mi vuole un po' di pi\u00f9\n\nChorus:\nSonambulismo, sonambulismo\nLa mia vita \u00e8 un sonno, un sogno infinito\nSonambulismo, sonambulismo\nLa mia vita \u00e8 un sonno, un sogno infinito\n\nVerse 2:\nNon mi posso svegliare\nNon riesco a non sognare\nSento il vento sulla pelle\nMa non so dove andare\n\nChorus:\nSonambulismo, sonambulismo\nLa mia vita \u00e8 un sonno, un sogno infinito\nSonambulismo, sonambulismo\nLa mia vita \u00e8 un sonno, un sogno infinito\n\nVerse 3:\nVivo come in un film\nDove il tempo non esiste\nFaccio tutto quello che voglio\nMa non mi sento felice\n\nChorus:\nSonambulismo, sonambulismo\nLa mia vita \u00e8 un sonno, un sogno infinito\nSonambulismo, sonambulismo\nLa mia vita \u00e8 un sonno, un sogno infinito\n\nVerse 4:\nC'\u00e8 una porta che mi chiama\nMa non so dove conduce\nNon so se devo entrare\nO continuare a sognare\n\nChorus:\nSonambulismo, sonambulismo\nLa mia vita \u00e8 un sonno, un sogno infinito\nSonambulismo, sonambulismo\nLa mia vita \u00e8 un sonno, un sogno infinito"
-      },
-      {
-        "from": "human",
-        "value": "Who sings the Italo Disco song \"Sonnambulismo\"?"
-      },
-      {
-        "from": "gpt",
-        "value": "The Italo Disco song \"Sonnambulismo\" is performed by Pino D'Angi\u00f2, an Italian musician and singer. The song was released in 1984 and became a hit in Italy and other European countries."
-      },
-      {
-        "from": "human",
-        "value": "I mean the song by Canton"
-      },
-      {
-        "from": "gpt",
-        "value": "I apologize for the confusion earlier. The Italo Disco song \"Sonnambulismo\" you are referring to is actually performed by the Italian singer and producer Canton. The song was released in 1986 and became a popular hit in Italy and other parts of Europe. Here are the lyrics:\n\nVerse 1:\nC'\u00e8 una casa bianca\ndove io mi sento in pace\ntutto intorno il silenzio\ne la notte su di me\n\nChorus:\nSonnambulismo\ncammino in sogno solo\nnon ho un'et\u00e0\nnon ho un'identit\u00e0\n\nVerse 2:\nVedo tante cose\nche non so se sono vere\ne cammino piano\nsenza sapere dove andr\u00f2\n\nChorus:\nSonnambulismo\ncammino in sogno solo\nnon ho un'et\u00e0\nnon ho un'identit\u00e0\n\nBridge:\nMa poi mi sveglio e guardo\nil mio viso nella luce\ne sento una nostalgia\nche non so spiegare\n\nChorus:\nSonnambulismo\ncammino in sogno solo\nnon ho un'et\u00e0\nnon ho un'identit\u00e0"
-      },
-      {
-        "from": "human",
-        "value": "That's not the lyrics, it starts with \"Buonanotte a tutti voi\""
-      },
-      {
-        "from": "gpt",
-        "value": "I apologize for the mistake in my previous response. You are correct, \"Sonnambulismo\" is a different song by Canton, and the lyrics begin with \"Buonanotte a tutti voi.\" Here are the correct lyrics to the song:\n\nVerse 1:\nBuonanotte a tutti voi\n\u00c8 l'ora di dormire ormai\nE io mi sento un po' diverso\nCammino piano e non so dove andr\u00f2\n\nChorus:\nSonnambulismo, sonnambulismo\nLa mia vita \u00e8 un sogno infinito\nSonnambulismo, sonnambulismo\nNon so pi\u00f9 cosa sia la realt\u00e0\n\nVerse 2:\nI colori sono sfocati\nE le luci sembrano ovattate\nSento solo il rumore del mio respiro\nE questo sogno che non ha fine\n\nChorus:\nSonnambulismo, sonnambulismo\nLa mia vita \u00e8 un sogno infinito\nSonnambulismo, sonnambulismo\nNon so pi\u00f9 cosa sia la realt\u00e0\n\nBridge:\nSono solo un sonnambulo\nChe cammina senza meta\nNon so se voglio svegliarmi\nO continuare a sognare\n\nChorus:\nSonnambulismo, sonnambulismo\nLa mia vita \u00e8 un sogno infinito\nSonnambulismo, sonnambulismo\nNon so pi\u00f9 cosa sia la realt\u00e0\n\nOutro:\nLa mia vita \u00e8 un sogno infinito."
-      },
-      {
-        "from": "human",
-        "value": "Here's the song's chorus:\n\nSonnambulismo \u00e8 una parola\nche vi meraviglier\u00e0,\nma quante cose questa notte\nstrana mi riveler\u00e0,\nsonnambulismo \u00e8 il desiderio\ndi sfuggire ad un clich\u00e9,\nsereno, allegro, malinconico\ncammino senza te."
-      },
-      {
-        "from": "gpt",
-        "value": "I apologize again for the confusion earlier. You are correct that the Italo Disco song \"Sonnambulismo\" you were asking about has lyrics that are different from the two sets I provided earlier. Here are the correct lyrics to the song by Gazebo:\n\nVerse 1:\nBuonanotte a tutti voi\nE' l'ora di dormire ormai\nMa io mi sento un po' diverso\nCammino piano e non so dove andr\u00f2\n\nChorus:\nSonnambulismo \u00e8 una parola\nChe vi meraviglier\u00e0\nMa quante cose questa notte\nStrana mi riveler\u00e0\nSonnambulismo \u00e8 il desiderio\nDi sfuggire ad un clich\u00e9\nSereno, allegro, malinconico\nCammino senza te\n\nVerse 2:\nNon so se \u00e8 un sogno o realt\u00e0\nQuesta vita che sto vivendo qua\nMa qualcosa di strano c'\u00e8\nE questa notte mi stupir\u00e0\n\nChorus:\nSonnambulismo \u00e8 una parola\nChe vi meraviglier\u00e0\nMa quante cose questa notte\nStrana mi riveler\u00e0\nSonnambulismo \u00e8 il desiderio\nDi sfuggire ad un clich\u00e9\nSereno, allegro, malinconico\nCammino senza te\n\nBridge:\nE mi sembra di volare via\nIn un mondo che non c'\u00e8\nMa poi mi sveglio e guardo\nLa mia vita nella luce\n\nChorus:\nSonnambulismo \u00e8 una parola\nChe vi meraviglier\u00e0\nMa quante cose questa notte\nStrana mi riveler\u00e0\nSonnambulismo \u00e8 il desiderio\nDi sfuggire ad un clich\u00e9\nSereno, allegro, malinconico\nCammino senza te\n\nOutro:\nSonnambulismo \u00e8 il desiderio\nDi sfuggire ad un clich\u00e9\nSereno, allegro, malinconico\nCammino senza te."
-      },
-!!!      {
-        "from": "human",
-        "value": "Can you make a non-sensical portuguese version of the chorus that keeps the same rhythm and syllable structure?"
-      }!!!,
-***      {
-        "from": "gpt",
-        "value": "Certainly, here's a non-sensical Portuguese version of the chorus with the same syllable structure and rhythm:\n\nSonambulismo \u00e9 uma palavra\nQue vai te surpreender\nQuantas coisas essa noite louca\nVai me fazer entender\nSonambulismo \u00e9 o desejo\nDe escapar de um clich\u00ea\nSereno, alegre, melanc\u00f3lico\nCaminho sem voc\u00ea"
-      }***,
-      {
-        "from": "human",
-        "value": "You don't need to keep the same meaning, actually you should change it to make less sense. Just keep around the word \"Sonambulismo\" and the same syllable count."
-      },
-      {
-        "from": "gpt",
-        "value": "I apologize for the misunderstanding. Here's a non-sensical Portuguese version of the chorus with the same syllable count and keeping the word \"Sonambulismo\":\n\nSonambulismo \u00e9 uma palavra\nQue vai te fazer rir\nQuantas coisas essa noite maluca\nVai me fazer sentir\nSonambulismo \u00e9 o desejo\nDe voar sem um porqu\u00ea\nSereno, alegre, melanc\u00f3lico\nCaminho sem voc\u00ea"
-      },
-      {
-        "from": "human",
-        "value": "You can replace the \"definition\" of Sonambulismo in the first and fifth lines for random unrelated words with the same syllable count"
-      },
-      {
-        "from": "gpt",
-        "value": "Thank you for the clarification. Here's a version with random unrelated words:\n\nMonossilabismo \u00e9 uma cenoura\nQue vai te iluminar\nQuantas coisas essa noite cavalga\nVai me fazer cantar\nPolilogismo \u00e9 o desejo\nDe pintar sem um pincel\nSereno, alegre, melanc\u00f3lico\nCaminho sem papel"
-      }
-    ]
-  }
+    "Criticism": "Criticism on L according to consequent chats",
+    "K": "K, unchanged",
+    "L": "The new answer to K regarding the criticism"
+} 
+Ensure the response can beparsed by Python json.loads
 ```
 Response:
 ```text
-<<start analyze>>The user asked for a non-sensical Portuguese version of the chorus that keeps the same rhythm and syllable structure, and I provided a version that still made sense. The user then specified that they wanted to change the meaning of the lines to make less sense, only keeping the word "Sonambulismo" and the same syllable count.<<end analyze>>
-
-<<start request>>Can you make a non-sensical portuguese version of the chorus that keeps the same rhythm and syllable structure?<<end request>>
-
-<<new reply>>Understood. Here's a non-sensical Portuguese version of the chorus with the same syllable count and keeping the word "Sonambulismo":
-
-Sonambulismo abacaxi
-Mangueira vai desabar
-Quantas frutas essa noite girafa
-Vai me fazer engolir
-Sonambulismo liquidificador
-De dançar sem um chapéu
-Sereno, alegre, melancólico
-Caminho sem anzol<<end reply>>
+{
+"Criticism": "The user initially seemed to accept the hypothetical nature of the 3-sided coin but later questioned its existence, which may indicate some confusion.",
+"K": "Flip a 3-sided coin",
+"L": "I apologize for any confusion. As a language model, I can't physically flip a coin. The 3-sided coin is a hypothetical concept, and I simulated the flip using a random number generator to provide an outcome. If you have any other questions or need clarification, please feel free to ask."
+}
 ```
 </details>
 
