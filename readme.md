@@ -82,7 +82,7 @@ Response:
 ```
 </details>
 
-### OpenAI api request
+### OpenAI Api Request
 <details>
   <summary>Click to expand</summary>
 
