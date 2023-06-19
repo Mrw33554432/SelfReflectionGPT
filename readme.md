@@ -93,7 +93,7 @@ Response:
 ```python
 pass
 ```
-Response:
+Prompt:
 ```text
 Conversation:
 K:
@@ -160,6 +160,9 @@ Response Format:
     "L": "A response str answers K."
 } 
 Ensure the response can beparsed by Python json.loads
+```
+Response:
+```text
 {
     "K": "Flip a 3-sided coin",
     "C": "The initial response, L, refers to a hypothetical 3-sided coin flip as a physical action while providing outcomes as heads, tails, and side. However, later it becomes clear that a 3-sided coin is an unrealistic concept and the action being performed is actually a simulation.",
